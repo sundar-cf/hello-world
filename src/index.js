@@ -10,6 +10,16 @@
 
 export default {
 	async fetch(request, env, ctx) {
-		return new Response('Hello World!');
+		return new Response('Hello Worker! It is not in prod yet.');
 	},
 };
+
+// Sample Binding:
+/*export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    const key = url.pathname.slice(1);
+    await env.MY_BUCKET.put(key, request.body);
+    return new Response(`Put ${key} successfully!`);
+  },
+};*/

@@ -6,6 +6,15 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "hello-world",
 	"main": "src/index.js",
+
+	// Sample Bukcet config: - uncomment to use
+	/*"r2_buckets": [
+    {
+      "binding": "sundar_r2_bucket",
+      "bucket_name": "<bucket name - aplhanum>"
+    }
+  ],*/
+  
 	"compatibility_date": "2026-03-01",
 	"observability": {
 		"enabled": true
