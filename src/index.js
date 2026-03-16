@@ -10,7 +10,7 @@
 
 export default {
 	async fetch(request, env, ctx) {
-		return new Response('Hello Worker! It is not in prod yet.');
+		return new Response('Hello Worker! xyz.');
 	},
 };
 
